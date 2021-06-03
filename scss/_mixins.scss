@@ -1,0 +1,38 @@
+@mixin font($font-size, $line-height, $font-weight: 400) {
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+}
+
+@mixin bcg-color-opacity($color, $opacity) {
+    background-color: rgba($color, $opacity);
+}
+
+@mixin box-shadow-opacity($color, $opacity) {
+    box-shadow: 0 0 0 0.25rem rgba($color, $opacity);
+}
+
+@mixin tablet-max {
+    @media (max-width: $desktop-width) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: $tables-width) and (max-width: $desktop-width) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: calc($tables-width - 1px)) {
+        @content;
+    }
+}
+
+@mixin transition-duration($transition-duration) {
+    -webkit-transition-duration: ($transition-duration);
+    -moz-transition-duration: ($transition-duration);
+    -o-transition-duration: ($transition-duration);
+    transition-duration: ($transition-duration);
+}
