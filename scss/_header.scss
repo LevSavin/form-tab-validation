@@ -26,6 +26,11 @@
     color: $blue-light-color;
 }
 
+.header__item-name:hover {
+    color: $white-color;
+    border-bottom: 1px solid $white-color;
+}
+
 .header__button {
     background-color: $blue-button-color;
 }
@@ -58,7 +63,7 @@
 }
 
 .header__button-icon {
-   margin: 0 (9px/$desktop-width*100vw) 0 (28px/$desktop-width*100vw);
+    margin: 0 (9px/$desktop-width*100vw) 0 (28px/$desktop-width*100vw);
 }
 
 .header__button-text {
@@ -67,5 +72,9 @@
 }
 
 .active-link {
-  color: $white-color;
+    color: $white-color;
+
+    &:hover {
+        border-bottom: 1px solid transparent;
+    }
 }

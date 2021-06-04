@@ -239,6 +239,11 @@ a:hover {
   color: #9CBAF0;
 }
 
+.header__item-name:hover {
+  color: #FFF;
+  border-bottom: 1px solid #FFF;
+}
+
 .header__button {
   background-color: #1740AA;
 }
@@ -296,6 +301,10 @@ a:hover {
   color: #FFF;
 }
 
+.active-link:hover {
+  border-bottom: 1px solid transparent;
+}
+
 .auth {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -351,6 +360,11 @@ a:hover {
   line-height: 27px;
   font-weight: 400;
   color: #C3CAD6;
+}
+
+.auth__form-name:hover, .auth__form-name:focus, .auth__form-name:active {
+  color: #3464E0;
+  cursor: pointer;
 }
 
 .auth__form-wrap {
@@ -427,8 +441,15 @@ a:hover {
   letter-spacing: 0px;
 }
 
+.auth__form-input:hover, .auth__form-input:focus, .auth__form-input:active {
+  border: 1px #3464E0;
+  outline: transparent;
+  -webkit-box-shadow: 0 0 0 0.25rem #c3cad6;
+          box-shadow: 0 0 0 0.25rem #c3cad6;
+}
+
 .auth__form-buttons {
-  margin: 43px 0 50px 0;
+  padding: 43px 0 50px 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: max-content max-content;
@@ -443,6 +464,15 @@ a:hover {
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
+  background-color: #3464E0;
+}
+
+.button-middle:hover, .button-middle:focus, .button-middle:active {
+  border: 1px #3464E0;
+  border-radius: 5px;
+  outline: transparent;
+  -webkit-box-shadow: 0 0 0 0.25rem #c3cad6;
+          box-shadow: 0 0 0 0.25rem #c3cad6;
 }
 
 .button-non-color {
@@ -503,6 +533,11 @@ a:hover {
   line-height: 27px;
   font-weight: 400;
   color: #C3CAD6;
+}
+
+.reg__form-name:hover, .reg__form-name:focus, .reg__form-name:active {
+  color: #3464E0;
+  cursor: pointer;
 }
 
 .reg__form-wrap {
@@ -654,6 +689,13 @@ a:hover {
   letter-spacing: 0px;
 }
 
+.reg__form-input:hover, .reg__form-input:focus, .reg__form-input:active {
+  border: 1px #3464E0;
+  outline: transparent;
+  -webkit-box-shadow: 0 0 0 0.25rem #c3cad6;
+          box-shadow: 0 0 0 0.25rem #c3cad6;
+}
+
 #name::-webkit-input-placeholder {
   color: #C3CAD6;
   font-size: 13px;
@@ -756,6 +798,13 @@ a:hover {
   color: #E06364;
 }
 
+.reg__form-checkbox:hover, .reg__form-checkbox:focus, .reg__form-checkbox:active {
+  border-bottom: 1px #3464E0;
+  outline: transparent;
+  -webkit-box-shadow: 0 0 0 0.25rem #c3cad6;
+          box-shadow: 0 0 0 0.25rem #c3cad6;
+}
+
 .reg__form-buttons {
   padding: 19px 1.11111vw 34px 2.29167vw;
   display: -webkit-box;
@@ -775,6 +824,14 @@ a:hover {
   background-color: #3464E0;
 }
 
+.button-big:hover, .button-big:focus, .button-big:active {
+  border: 1px #3464E0;
+  border-radius: 5px;
+  outline: transparent;
+  -webkit-box-shadow: 0 0 0 0.25rem #c3cad6;
+          box-shadow: 0 0 0 0.25rem #c3cad6;
+}
+
 .button-lighter {
   width: 136px;
   min-height: 44px;
@@ -784,5 +841,13 @@ a:hover {
   background-color: #FFF;
   color: #C3CAD6;
   border-color: #C3CAD6;
+}
+
+.button-lighter:hover, .button-lighter:focus, .button-lighter:active {
+  border: 1px #3464E0;
+  border-radius: 5px;
+  outline: transparent;
+  -webkit-box-shadow: 0 0 0 0.25rem #c3cad6;
+          box-shadow: 0 0 0 0.25rem #c3cad6;
 }
 /*# sourceMappingURL=style.css.map */

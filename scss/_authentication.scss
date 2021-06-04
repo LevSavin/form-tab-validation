@@ -44,6 +44,13 @@
 .auth__form-name {
     @include font(25px, 27px, 400);
     color: $blue-lighter-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $blue-background-color;
+        cursor: pointer;
+    }
 }
 
 .auth__form-wrap {
@@ -88,10 +95,18 @@
         @include font(16px, 26px, 400);
         letter-spacing: 0px;
     }
+
+    &:hover,
+    &:focus,
+    &:active {
+        border: 1px $blue-background-color;
+        outline: transparent;
+        @include box-shadow-opacity($blue-lighter-color, 50%)
+    }
 }
 
 .auth__form-buttons {
-    margin: 43px 0 50px 0;
+    padding: 43px 0 50px 0;
     display: grid;
     grid-template-columns: max-content max-content;
     grid-gap: (57px/$desktop-width*100vw);
@@ -101,6 +116,16 @@
     width: 157px;
     min-height: 44px;
     @include font(16px, 26px, 400);
+    background-color: $blue-background-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+        border: 1px $blue-background-color;
+        border-radius: 5px;
+        outline: transparent;
+        @include box-shadow-opacity($blue-lighter-color, 50%)
+    }
 }
 
 .button-non-color {
@@ -159,6 +184,13 @@
 .reg__form-name {
     @include font(25px, 27px, 400);
     color: $blue-lighter-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $blue-background-color;
+        cursor: pointer;
+    }
 }
 
 .reg__form-wrap {
@@ -247,6 +279,14 @@
         @include font(15px, 26px, 400);
         letter-spacing: 0px;
     }
+
+    &:hover,
+    &:focus,
+    &:active {
+        border: 1px $blue-background-color;
+        outline: transparent;
+        @include box-shadow-opacity($blue-lighter-color, 50%)
+    }
 }
 
 #name::placeholder {
@@ -308,6 +348,14 @@
         top: -1px;
         color: $red-color;
     }
+
+    &:hover,
+    &:focus,
+    &:active {
+        border-bottom: 1px $blue-background-color;
+        outline: transparent;
+        @include box-shadow-opacity($blue-lighter-color, 50%)
+    }
 }
 
 .reg__form-buttons {
@@ -321,6 +369,15 @@
     min-height: 44px;
     @include font(15px, 26px, 400);
     background-color: $blue-background-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+        border: 1px $blue-background-color;
+        border-radius: 5px;
+        outline: transparent;
+        @include box-shadow-opacity($blue-lighter-color, 50%)
+    }
 }
 
 .button-lighter {
@@ -330,4 +387,13 @@
     background-color: $white-color;
     color: $blue-lighter-color;
     border-color: $blue-lighter-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+        border: 1px $blue-background-color;
+        border-radius: 5px;
+        outline: transparent;
+        @include box-shadow-opacity($blue-lighter-color, 50%)
+    }
 }
